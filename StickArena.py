@@ -535,13 +535,17 @@ def main():
 
         background.blit(lancer_text, textpos1)
 # Images collees sur le fond de l'introduction
-        persobleu = pygame.image.load("bleuintro.png").convert()
+        persobleu = pygame.image.load("src/ninja/idle-Sheet.png").convert()
+
+        
+
         background.blit(persobleu, (200,300))
 
-        persorouge = pygame.image.load("rougeintro.png").convert()
-        background.blit(persorouge, (700,300))
+        persorouge = pygame.image.load("src/ninja/idle-Sheet.png").convert() #rouge intro
+        background.blit(persorouge, (700,300), (0, 0, 33, 100)) #afficher un ninja
+                                                #
 
-        shurintro= pygame.image.load("shurintro.png").convert()
+        shurintro= pygame.image.load("src/ninja/idle-Sheet.png").convert() #bleu intro
         background.blit(shurintro, (475,300))
 
 
